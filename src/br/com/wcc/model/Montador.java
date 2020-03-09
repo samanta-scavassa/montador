@@ -1,5 +1,6 @@
 package br.com.wcc.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -16,6 +17,7 @@ public class Montador implements Produto{
     @Override
     public void montar(){
         
+        componentes = new ArrayList<>();
         ComponenteEnum[] valorEnum = ComponenteEnum.values();
         System.out.println(random.nextInt(valorEnum.length-1));
 
@@ -25,6 +27,7 @@ public class Montador implements Produto{
                     componentes.add(valorEnum[random.nextInt(valorEnum.length-1)]);
                 }
                 placaLista[j] = new Placa(valorTamanho, componentes);
+                System.out.println("Placa " + j+1 + ":\n");
                 placaLista[j].imprimePlaca();
                 componentes.clear();
         }
