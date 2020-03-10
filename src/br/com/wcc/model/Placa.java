@@ -11,6 +11,7 @@ public class Placa {
 
     private List<ComponenteEnum> componentes;
 
+    //construtor
     public Placa(int tamanho, List<ComponenteEnum> componentes){
         this.tamanho = tamanho;
         this.componentes = componentes;
@@ -18,6 +19,7 @@ public class Placa {
     
 
     public int getTamanho() {
+
         return tamanho;
     }
 
@@ -26,10 +28,12 @@ public class Placa {
     }
 
     public void setComponentes(List<ComponenteEnum> componentes) {
+
         this.componentes = componentes;
     }
 
     public void imprimeComponentes(){
+        //forEach para imprimir cada componente da lista
         componentes.forEach(componente ->{
             System.out.println(componente.toString());
         });
