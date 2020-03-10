@@ -1,9 +1,9 @@
 package br.com.wcc.model;
 
 /**
- * Produto
+ * Montagem
  */
-public interface Produto {
+public interface Montagem {
     
     public void montar();
     

@@ -29,7 +29,7 @@ public class Placa {
         this.componentes = componentes;
     }
 
-    public void imprimePlaca(){
+    public void imprimeComponentes(){
         componentes.forEach(componente ->{
             System.out.println(componente.toString());
         });
