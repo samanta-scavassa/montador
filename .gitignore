@@ -4,3 +4,6 @@
 .vscode
 *.log
 bin
+
+.idea
+*.iml
